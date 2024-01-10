@@ -3,7 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+ img {
+    height: 45%;
+    width: 45%;
+ }
 
-.active {
-    border-bottom: 1px solid #333;
+ body {
+ font-size: 20px;
 }

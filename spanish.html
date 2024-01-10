@@ -1,53 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        h1 {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            align-items: center;
+            margin: 0;
+        }
+        #page-links {
+            letter-spacing: 2px;
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+        .active {
+    border-bottom: 1px solid #333;
+       }
+        #wrapper {
+            display: flex;
+            flex: 1;
+        }
+        #side-panel {
+            width: 200px;
+            letter-spacing: 1px;
+            background-color: #C25811;
+            color: #F4F4F4;
+            padding: 20px;
+            display: flex;
+            border-width: 2px;
+            border-style: outset;
+            border-color: #333;
+            flex-direction: column;
+            margin-bottom: 20px;
+            
+        }
+        #side-panel a {
+            text-decoration: none;
+            color: #333;
+        }
+        #main-content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background-color: #F4F4F4;
+        }
+        .text-block {
+            margin-bottom: 20px;
+        }
+        #footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        .social-media-link {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .social-media-logo {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        @media (max-width: 768px) {
+            #side-panel {
+                width: 120px; /* Adjust the width as needed */
+                height: auto;
+            }
+            #main-content {
+                width: 100%;
+            }
+            .italian-content {
+                flex-direction: column-reverse;
+            }
+            .italian-double-section {
+                flex-direction: column;
+            }
+            .italian-text-box,
+            .italian-picture-box,
+            .recipe-box {
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+        /* Italian Page Specific Styles */
+        .italian-content {
+            display: flex;
+            flex-direction: column;
+        }
+        .italian-title,
+        .italian-text-box,
+        .italian-picture-box,
+        .recipe-box {
+            margin-bottom: 20px;
+        }
+        .italian-double-section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .italian-text-box,
+        .italian-picture-box,
+        .recipe-box {
+            flex: 1;
+        }
+        .italian-picture-box img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+    </style>
     <title>MoodFood</title>
+    <!--Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+    <header>
+        <h1>Mood Food</h1>
+    </header>
     <div id="wrapper">
         <div id="side-panel">
             <h2>Side Panel</h2>
-            <a href="about_us.html">About Us</a>
-            <a href="italian.html">Italian</a>
-            <a href="french.html">French</a>
-            <a href="spanish.html">Spanish</a>
-            <a href="indian.html">Indian</a>
+            <a href="about_us.html" id="page-links">About Us</a>
+            <a href="italian.html" id="page-links">Italian</a>
+            <a href="french.html" id="page-links">French</a>
+            <a href="spanish.html" id="page-links" class="active">Spanish</a>
+            <a href="indian.html" id="page-links">Indian</a>
         </div>
         <div id="main-content">
-            <div class="text-block">
-                <h2>Text Block 1</h2>
-                <p>This is the content of Text Block 1.</p>
-            </div>
-            <div class="image-block">
-                <a href="#">
-                    <img src="https://via.placeholder.com/400" alt="Sample Image">
-                </a>
-            </div>
-            <div class="text-block">
-                <h2>Text Block 2</h2>
-                <p>This is the content of Text Block 2.</p>
+            <div class="italian-content">
+                <div class="italian-title">
+                    <h2>Italian Foods</h2>
+                </div>
+                <!-- First Recipe Box -->
+                <div class="recipe-box">
+                    <h2>Garlic Butter Shrimp Pasta</h2>
+                    <p>
+                        <ul>
+                            <li>12 oz Fettuccine</li>
+                            <li>1 lb Shrimp</li>
+                            <li>4 clove Garlic</li>
+                            <li>½ cup Parmesan Cheese</li>
+                            <li>4 tbsp Butter</li>
+                            <li>¼ Juice of Lemon Juice from 1/4 of Lemon</li>
+                            <li>¼ Lemon Zest from 1/4 of Lemon</li>
+                            <li>2 tbsp Cooking Oil</li>
+                            <li>Sea Salt</li>
+                            <li>Black Pepper</li>
+                        </ul>
+                    </p>
+                </div>
+                <!-- First Image and Text Boxes -->
+                <div class="italian-double-section">
+                    <div class="italian-picture-box">
+                        <h2>Italian Picture Box 1</h2>
+                        <a href="#">
+                            <img src="x" alt="Italian Sample Image 1">
+                        </a>
+                    </div>
+                    <div class="italian-text-box">
+                        <h2>Italian Text Box 1</h2>
+                        <p>This is the content of Italian text box 1.</p>
+                    </div>
+                </div>
+                <!-- Second Recipe Box -->
+                <div class="recipe-box">
+                    <h2>Recipe 2</h2>
+                    <p>This is the content of Recipe box 2.</p>
+                </div>
+                <!-- Second Image and Text Boxes -->
+                <div class="italian-double-section">
+                    <div class="italian-picture-box">
+                        <h2>Italian Picture Box 2</h2>
+                        <a href="#">
+                            <img src="x" alt="Italian Sample Image 2">
+                        </a>
+                    </div>
+                    <div class="italian-text-box">
+                        <h2>Italian Text Box 2</h2>
+                        <p>This is the content of Italian text box 2.</p>
+                    </div>
+                </div>
+                <!-- Third Recipe Box -->
+                <div class="recipe-box">
+                    <h2>Recipe 3</h2>
+                    <p>This is the content of Recipe box 3.</p>
+                </div>
+                <!-- Third Image and Text Boxes -->
+                <div class="italian-double-section">
+                    <div class="italian-picture-box">
+                        <h2>Italian Picture Box 3</h2>
+                        <a href="#">
+                            <img src="x" alt="Italian Sample Image 3">
+                        </a>
+                    </div>
+                    <div class="italian-text-box">
+                        <h2>Italian Text Box 3</h2>
+                        <p>This is the content of Italian text box 3.</p>
+                    </div>
+                </div>
+                <!-- Fourth Recipe Box -->
+                <div class="recipe-box">
+                    <h2>Recipe 4</h2>
+                    <p>This is the content of Recipe box 4.</p>
+                </div>
+                <!-- Fourth Image and Text Boxes -->
+                <div class="italian-double-section">
+                    <div class="italian-picture-box">
+                        <h2>Italian Picture Box 4</h2>
+                        <a href="#">
+                            <img src="x" alt="Italian Sample Image 4">
+                        </a>
+                    </div>
+                    <div class="italian-text-box">
+                        <h2>Italian Text Box 4</h2>
+                        <p>This is the content of Italian text box 4.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <footer>
+    <div id="footer">
         <a href="#" class="social-media-link">
-            <img src="https://via.placeholder.com/20" alt="Facebook Logo" class="social-media-logo">
+            <img src="x" alt="Facebook Logo" class="social-media-logo">
             Facebook
         </a>
         <a href="#" class="social-media-link">
-            <img src="https://via.placeholder.com/20" alt="Twitter Logo" class="social-media-logo">
+            <img src="x" alt="Twitter Logo" class="social-media-logo">
             Twitter
         </a>
         <a href="#" class="social-media-link">
-            <img src="https://via.placeholder.com/20" alt="Instagram Logo" class="social-media-logo">
+            <img src="x" alt="Instagram Logo" class="social-media-logo">
             Instagram
         </a>
-    </footer>
+    </div>
 </body>
-
 </html>
