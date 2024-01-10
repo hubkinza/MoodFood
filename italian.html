@@ -26,6 +26,9 @@
             font-size: 20px;
             margin-bottom: 18px;
         }
+        .active {
+    border-bottom: 1px solid #333;
+       }
         #wrapper {
             display: flex;
             flex: 1;
@@ -42,6 +45,10 @@
             border-color: #333;
             flex-direction: column;
             
+        }
+        #side-panel a {
+            text-decoration: none;
+            color: #333;
         }
         #main-content {
             flex: 1;
@@ -118,8 +125,11 @@
             max-width: 100%;
             height: auto;
         }
+        
     </style>
     <title>MoodFood</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
@@ -129,7 +139,7 @@
         <div id="side-panel">
             <h2>Side Panel</h2>
             <a href="about_us.html" id="page-links">About Us</a>
-            <a href="italian.html" id="page-links">Italian</a>
+            <a href="italian.html" id="page-links" class="active">Italian</a>
             <a href="french.html" id="page-links">French</a>
             <a href="spanish.html" id="page-links">Spanish</a>
             <a href="indian.html" id="page-links">Indian</a>
