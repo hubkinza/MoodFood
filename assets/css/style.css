@@ -70,3 +70,63 @@ header a {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: rgb(237, 235, 243);
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Main content */
+main {
+    /* Enlarge main element to push footer down*/
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/Hero\ Image.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    /* Final rgba value sets the opacity so it is semi-transparent */
+    background-color: rgba(145, 138, 203, 0.7);
+    font-size: 130%;
+    position:sticky;
+    bottom: 10px;
+    width: fit-content;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
+}
+
