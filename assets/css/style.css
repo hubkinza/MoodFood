@@ -156,3 +156,28 @@ main {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
+/* Footer */
+.contact{
+    text-transform: capitalize;
+    text-align: center;
+    text-size-adjust: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+
+    
+}
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
