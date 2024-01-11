@@ -130,3 +130,29 @@ main {
     color: #ffffff;
 }
 
+/* cousines section */
+#cousines {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#cousines h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#cousine-style > div,
+#cousine-other > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#recipe p {
+    padding: 0 20px;
+}
+
+#recipe hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
