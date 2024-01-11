@@ -24,7 +24,7 @@ h1 {
     font-family: 'Merienda', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #251515;
+    color: #513030;
     text-align: center;
 }
 
@@ -36,9 +36,9 @@ h1 {
 }
 
 
-/*.hidden-heading {
+.hidden-heading {
     display: none;
-}*/
+}
 
 /* Header */
 header {
@@ -57,6 +57,7 @@ header a {
     text-decoration: none;
     color: inherit;
 }
+
 
 #menu {
     font-size: 110%;
