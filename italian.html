@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            align-items: center;
+            margin: 0;
+        }
+
+        #page-links {
+            letter-spacing: 2px;
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+        .active {
+            border-bottom: 1px solid #333;
+        }
+
+        #spacing {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: auto;
+            margin-top: 10px;
+        }
+
+        #wrapper {
+            display: flex;
+            flex: 1;
+        }
+
+        #side-panel {
+            width: 200px;
+            letter-spacing: 1px;
+            background-color: #C25811;
+            color: #F4F4F4;
+            padding: 20px;
+            display: flex;
+            border-width: 2px;
+            border-style: outset;
+            border-color: #333;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+        }
+
+        #side-panel a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        #main-content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background-color: #FFF4F2;
+        }
+
+        .text-block {
+            margin-bottom: 20px;
+        }
+
+        #footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            height: auto;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .social-media-link {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-media-logo {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            #side-panel {
+                width: 120px;
+                /* Adjust the width as needed */
+                height: auto;
+            }
+
+            #main-content {
+                width: 100%;
+            }
+
+            .italian-content {
+                flex-direction: column-reverse;
+            }
+
+            .italian-double-section {
+                flex-direction: column;
+            }
+
+            .italian-text-box,
+            .italian-picture-box,
+            .recipe-box {
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+
+        /* Italian Page Specific Styles */
+        .italian-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .italian-title,
+        .italian-text-box,
+        .italian-picture-box,
+        .recipe-box {
+            margin-bottom: 20px;
+        }
+
+        .italian-double-section {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .italian-text-box,
+        .italian-picture-box,
+        .recipe-box {
+            flex: 1;
+        } 
+
+        .italian-picture-box img {
+            max-width: 100%;
+            width: fit-content;
+            height: auto;
+            
+        }
+        
+        .italian-picture-box {
+            text-align: center;
+        }
+        .italian-picture-box h2 {
+            margin-bottom: 10px;
+        }
+        .recipe-box li {
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+       .italian-text-box li {
+        letter-spacing: 1px;
+            margin-bottom: 10px;
+       }
+    </style>
+    <title>MoodFood</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mood Food</h1>
+    </header>
+    <div id="wrapper">
+        <div id="side-panel">
+            <h2>Menu</h2>
+            <a href="index.html" id="page-links">Home</a>
+            <a href="italian.html" id="page-links" class="active">Italian</a>
+            <a href="french.html" id="page-links">French</a>
+            <a href="spanish.html" id="page-links">Spanish</a>
+            <a href="indian.html" id="page-links">Indian</a>
+        </div>
+        <div id="main-content">
+            <div class="italian-content">
+                <div class="italian-title">
+                    <h2>Italian Foods</h2>
+                </div>
+                <!-- First Recipe Box -->
+                <div class="italian-picture-box">
+                    <h2>Garlic Butter Shrimp Pasta</h2>
+                    <a href="assets/recipe photos/italian1_720.jpg">
+                        <img src="assets/recipe photos/italian1_720.jpg" alt="Italian Garlic Butter Shrimp Pasta">
+                    </a>
+                </div>
+                <!-- First Image and Text Boxes -->
+                <div class="italian-double-section">
+                    <div class="recipe-box">
+                        <h2>Ingredients</h2>
+                        <p>
+                            <ul>
+                                <li>12 oz Fettuccine</li>
+                                <li>1 lb Shrimp</li>
+                                <li>4 clove Garlic</li>
+                                <li>½ cup Parmesan Cheese</li>
+                                <li>4 tbsp Butter</li>
+                                <li>¼ Juice of Lemon Juice from 1/4 of Lemon</li>
+                                <li>¼ Lemon Zest from 1/4 of Lemon</li>
+                                <li>2 tbsp Cooking Oil</li>
+                                <li>Sea Salt</li>
+                                <li>Black Pepper</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="italian-text-box">
+                        <h2>Instructions</h2>
+                        <p>
+                            <ol>
+                                <li>In a large pot boiling salted water, cook fettuccine pasta until al dente, drain
+                                    well then set aside.</li>
+                                <li> In a pan, heat cooking oil over medium heat. Cook garlic until fragrant for 2
+                                    minutes.</li>
+                                <li>Melt butter in the same pan then cooks shrimp. Stir occasionally until the shrimp
+                                    turn opaque white with some pink for about 4-6 minutes.</li>
+                                <li> Add lemon juice, lemon zest, parmesan cheese, salt, and black pepper. Stir until
+                                    combined and the parmesan cheese melted.</li>
+                                <li> Transfer the fettuccine into a pan, stir until evenly distributed.</li>
+                                <li> Garnish with parsley before serving.</li>
+                                <li>Enjoy!</li>
+                            </ol>
+                            <nav id="spacing">
+                                <b>Prep Time:</b> 15 minutes
+                                <b>Cook Time:</b> 45 minutes
+                                <b>Servings:</b> 5 people
+                            </nav>
+                            <a href="https://muchbutter.com/garlic-butter-shrimp-pasta/
+                        ">Source</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Second Recipe Box -->
+                <div class="italian-picture-box">
+                    <h2>Classic Margherita Pizza</h2>
+                    <a href="assets/recipe photos/italian2_720.jpg">
+                        <img src="assets/recipe photos/italian2_720.jpg" alt="Italian Margharita Pizza">
+                    </a>
+                </div>
+                <!-- Second Image and Text Boxes -->
+                <div class="italian-double-section">
+                    <div class="recipe-box">
+                        <h2>Ingredients</h2>
+                        <p>
+                            <ul>
+                                <li>1 (12-inch) round of pizza dough</li>
+                                <li>3 tbsp tomato sauce</li>
+                                <li>Some good olive oil</li>
+                                <li>4 or 5 basil leaves, torn into pieces</li>
+                                <li>2 3/4 oz fresh mozzarella</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="italian-text-box">
+                        <h2>Instructions</h2>
+                        <p>
+                            <ol>
+                                <li>Preheat the oven to the highest temperature possible. Place a pizza stone or tile
+                                    son the middle rack of the oven and let it heat up for 1 hour.</li>
+                                <li> Put the sauce in the center of the dough round and use the back of a spoon to
+                                    spread it evenly over the pizza, stopping about a half an inch from the edge.
+                                    Drizzle a little olive oil over the sauce and scatter the basil on top. (Roberta's
+                                    puts the basil under the cheese so that the heat from the wood-fired oven doesn't
+                                    incinerate it.)</li>
+                                <li> Break the mozzarella into several large chunks and distribute it over the pizza.
+                                    Bake the pizza until the crust is golden brown and bubbly.</li>
+                                <li> Enjoy!</li>
+                                <nav id="spacing">
+                                    <b>Makes</b> 1 (12-inch) pizza.
+                                </nav>
+                            </ol>
+                            <a href="https://www.instyle.com/news/robertas-margherita-pizza-recipe 
+                            ">Source</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Third Recipe Box -->
+                <div class="italian-picture-box">
+                    <h2>Tiramisu</h2>
+                    <a href="assets/recipe photos/italian3_720.jpg">
+                        <img src="assets/recipe photos/italian3_720.jpg" alt="Italian Tirimasu">
+                    </a>
+                </div>
+                <!-- Third Image and Text Boxes -->
+                <div class="italian-double-section">
+                    <div class="recipe-box">
+                        <h2>Ingredients</h2>
+                        <p>
+                            <ul>
+                                <li>5 egg yolks</li>
+                                <li>1 cup sugar</li>
+                                <li>1 cup mascarpone</li>
+                                <li>2 cups double cream</li>
+                                <li>2 cups strong coffee</li>
+                                <li>1 cup kahlua</li>
+                                <li>24 u lady fingers</li>
+                                <li>cocoa powder for garnish</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="italian-text-box">
+                        <h2>Instructions</h2>
+                        <p>
+                            <ol>
+                                <li>Whisk egg yolks and sugar until pale and creamy.</li>
+                                <li>Add mascarpone to the egg yolk mixture and mix until smooth.</li>
+                                <li> Whip double cream until stiff peaks form.</li>
+                                <li> Gently fold whipped cream into the mascarpone mixture.</li>
+                                <li>Make a strong cup of coffee and let it cool. Add Kahlua and mix.</li>
+                                <li>Dip ladyfingers into the coffee-Kahlua mixture.</li>
+                                <li>Arrange a layer of dipped ladyfingers in a serving dish.</li>
+                                <li>Spread half of the mascarpone cream mixture over the ladyfingers.</li>
+                                <li>Repeat the layers with another layer of dipped ladyfingers and the remaining
+                                    mascarpone cream mixture.</li>
+                                <li>Chill for 2 hours</li>
+                                <li>Before serving, sift cocoa powder over the top for garnish.</li>
+                                <li> Slice and serve chilled.</li>
+                                <li>Enjoy!</li>
+
+                            </ol>
+                        </p>
+                        <nav id="spacing">
+                            <a href="https://www.tastemade.co.uk/videos/classic-tiramisu/
+                            ">Source</a>
+
+                        </nav>
+                    </div>
+                </div>
+                <!-- Fourth Recipe Box -->
+                <div class="italian-picture-box">
+                    <h2>Caprese Salad</h2>
+                    <a href="assets/recipe photos/italian4_720.jpg">
+                        <img src="assets/recipe photos/italian4_720.jpg" alt="Italian Caprese Salad">
+                    </a>
+                </div>
+                <!-- Fourth Image and Text Boxes -->
+                <div class="italian-double-section">
+                    <div class="recipe-box">
+                        <h2>Ingredients</h2>
+                        <p>
+                            <ul>
+                                <li>1 bag Mixed salad</li>
+                                <li>2 handfuls Cherry tomatoes</li>
+                                <li>2 handfuls Mozzarella</li>
+                                <li>1 Avocado</li>
+                                <li>2tbsp Pesto (ideally home made, but the stuff from the fresh pasta aisle will do!)
+                                </li>
+                                <li>4tsbp Olive oil</li>
+                                <li>Juice of 1 lemon</li>
+                                <li>Salt + Pepper</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="italian-text-box">
+                        <h2>Instructions</h2>
+                        <p>
+                            <ol>
+                               <li>Chop your avocado and sprinkle on top of your salad.</li>
+                               <li>Follow with halved cherry tomatoes</li>
+                               <li>Toss your balls over the top.</li>
+                               <li>Pop your pesto, olive oil, lemon juice, a pinch of salt + pepper into a jar.</li>
+                               <li>Close, and shake!</li>
+                               <li>Drizzle all over the salad and….</li>
+                               <li>Enjoy!</li>
+
+                            </ol>
+                        </p>
+                        <nav id="spacing">
+                             <a href="https://yournewfoods.com/italian-salad-recipes-10-tasty-salads-for-any-occasion/">Source</a>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <a href="#" class="social-media-link">
+            <img src="x" alt="Facebook" class="social-media-logo">
+            
+        </a>
+        <a href="#" class="social-media-link">
+            <img src="x" alt="Twitter" class="social-media-logo">
+            
+        </a>
+        <a href="#" class="social-media-link">
+            <img src="x" alt="Instagram" class="social-media-logo">
+            
+        </a>
+    </div>
+</body>
+
+</html>
