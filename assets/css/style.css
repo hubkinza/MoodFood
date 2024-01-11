@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /*  project styles */
+    /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
@@ -70,6 +70,7 @@ header a {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
@@ -156,6 +157,7 @@ main {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
+
 /* Footer */
 .contact{
     text-transform: capitalize;
@@ -181,3 +183,108 @@ main {
     color: #3a3a3a;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 290%;
+        line-height: 85px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 89px;
+    }
+
+    /* Hero */
+    #cover-text {
+        width: fit-content;
+        left: 100px;
+    }
+
+    /* cousines section */
+    #cousine-style,
+    #cousine-other {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #cousine-style > div,
+    #cousine-other > div {
+        width: 75%;
+    }
+
+    #cousine-other > div {
+        text-align: end;
+        align-self: flex-end;
+    }
+
+    
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {    
+    /* cousines section */
+    #recipe {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #recipe > div {
+        flex: 1;
+    }
+
+    #recipe-image {
+        order: 0
+    }
+
+    #cousine-other {
+        order: 1;
+    }
+
+    #cousine-other > div {
+        align-self: flex-start;
+    }
+
+    #cousine-style > div {
+        align-self: flex-end;
+    }
+}
