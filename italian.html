@@ -72,7 +72,7 @@
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            background-color: #F4F4F4;
+            background-color: #FFF4F2;
         }
 
         .text-block {
@@ -85,6 +85,7 @@
             text-align: center;
             padding: 10px;
             width: 100%;
+            height: auto;
             position: fixed;
             bottom: 0;
         }
@@ -144,18 +145,34 @@
         .italian-double-section {
             display: flex;
             flex-wrap: wrap;
+            
         }
 
         .italian-text-box,
         .italian-picture-box,
         .recipe-box {
             flex: 1;
-        }
+        } 
 
         .italian-picture-box img {
             max-width: 100%;
             height: auto;
         }
+        
+        .italian-picture-box {
+            text-align: center;
+        }
+        .italian-picture-box h2 {
+            margin-bottom: 10px;
+        }
+        .recipe-box li {
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+       .italian-text-box li {
+        letter-spacing: 1px;
+            margin-bottom: 10px;
+       }
     </style>
     <title>MoodFood</title>
     <!--Stylesheet-->
@@ -168,7 +185,7 @@
     </header>
     <div id="wrapper">
         <div id="side-panel">
-            <h2>Side Panel</h2>
+            <h2>Menu</h2>
             <a href="about_us.html" id="page-links">About Us</a>
             <a href="italian.html" id="page-links" class="active">Italian</a>
             <a href="french.html" id="page-links">French</a>
@@ -181,30 +198,30 @@
                     <h2>Italian Foods</h2>
                 </div>
                 <!-- First Recipe Box -->
-                <div class="recipe-box">
-                    <h2>Ingredients</h2>
-                    <p>
-                        <ul>
-                            <li>12 oz Fettuccine</li>
-                            <li>1 lb Shrimp</li>
-                            <li>4 clove Garlic</li>
-                            <li>½ cup Parmesan Cheese</li>
-                            <li>4 tbsp Butter</li>
-                            <li>¼ Juice of Lemon Juice from 1/4 of Lemon</li>
-                            <li>¼ Lemon Zest from 1/4 of Lemon</li>
-                            <li>2 tbsp Cooking Oil</li>
-                            <li>Sea Salt</li>
-                            <li>Black Pepper</li>
-                        </ul>
-                    </p>
+                <div class="italian-picture-box">
+                    <h2>Garlic Butter Shrimp Pasta</h2>
+                    <a href="assets/recipe photos/italian1_720.jpg">
+                        <img src="assets/recipe photos/italian1_720.jpg" alt="Italian Garlic Butter Shrimp Pasta">
+                    </a>
                 </div>
                 <!-- First Image and Text Boxes -->
                 <div class="italian-double-section">
-                    <div class="italian-picture-box">
-                        <h2>Garlic Butter Shrimp Pasta</h2>
-                        <a href="assets/Recipe Photos/butter shrimp.jpg">
-                            <img src="assets/Recipe Photos/butter shrimp.jpg" alt="Italian Garlic Butter Shrimp Pasta">
-                        </a>
+                    <div class="recipe-box">
+                        <h2>Ingredients</h2>
+                        <p>
+                            <ul>
+                                <li>12 oz Fettuccine</li>
+                                <li>1 lb Shrimp</li>
+                                <li>4 clove Garlic</li>
+                                <li>½ cup Parmesan Cheese</li>
+                                <li>4 tbsp Butter</li>
+                                <li>¼ Juice of Lemon Juice from 1/4 of Lemon</li>
+                                <li>¼ Lemon Zest from 1/4 of Lemon</li>
+                                <li>2 tbsp Cooking Oil</li>
+                                <li>Sea Salt</li>
+                                <li>Black Pepper</li>
+                            </ul>
+                        </p>
                     </div>
                     <div class="italian-text-box">
                         <h2>Instructions</h2>
@@ -233,25 +250,25 @@
                     </div>
                 </div>
                 <!-- Second Recipe Box -->
-                <div class="recipe-box">
-                    <h2>Ingredients</h2>
-                    <p>
-                        <ul>
-                            <li>1 (12-inch) round of pizza dough</li>
-                            <li>3 tbsp tomato sauce</li>
-                            <li>Some good olive oil</li>
-                            <li>4 or 5 basil leaves, torn into pieces</li>
-                            <li>2 3/4 oz fresh mozzarella</li>
-                        </ul>
-                    </p>
+                <div class="italian-picture-box">
+                    <h2>Classic Margherita Pizza</h2>
+                    <a href="assets/recipe photos/italian2_720.jpg">
+                        <img src="assets/recipe photos/italian2_720.jpg" alt="Italian Margharita Pizza">
+                    </a>
                 </div>
                 <!-- Second Image and Text Boxes -->
                 <div class="italian-double-section">
-                    <div class="italian-picture-box">
-                        <h2>Classic Margherita Pizza</h2>
-                        <a href="assets/Recipe Photos/Margharita Pizza.jpg">
-                            <img src="assets/Recipe Photos/Margharita Pizza.jpg" alt="Italian Margharita Pizza">
-                        </a>
+                    <div class="recipe-box">
+                        <h2>Ingredients</h2>
+                        <p>
+                            <ul>
+                                <li>1 (12-inch) round of pizza dough</li>
+                                <li>3 tbsp tomato sauce</li>
+                                <li>Some good olive oil</li>
+                                <li>4 or 5 basil leaves, torn into pieces</li>
+                                <li>2 3/4 oz fresh mozzarella</li>
+                            </ul>
+                        </p>
                     </div>
                     <div class="italian-text-box">
                         <h2>Instructions</h2>
@@ -277,75 +294,99 @@
                     </div>
                 </div>
                 <!-- Third Recipe Box -->
-                <div class="recipe-box">
-                    <h2>Ingredients</h2>
-                    <p>
-                        <ul>
-                           <li>5 egg yolks</li>
-                           <li>1 cup sugar</li>
-                            <li>1 cup mascarpone</li>
-                                <li>2 cups double cream</li>
-                                    <li>2 cups strong coffee</li>
-                                        <li>1 cup kahlua</li>
-                                            <li>24 u lady fingers</li>
-                                                <li>cocoa powder for garnish</li>
-                        </ul>
-                    </p>
+                <div class="italian-picture-box">
+                    <h2>Tiramisu</h2>
+                    <a href="assets/recipe photos/italian3_720.jpg">
+                        <img src="assets/recipe photos/italian3_720.jpg" alt="Italian Tirimasu">
+                    </a>
                 </div>
                 <!-- Third Image and Text Boxes -->
                 <div class="italian-double-section">
-                    <div class="italian-picture-box">
-                        <h2>Tiramisu</h2>
-                        <a href="assets/Recipe Photos/Tiramisu.jpg">
-                            <img src="assets/Recipe Photos/Tiramisu.jpg" alt="Italian Tirimasu">
-                        </a>
+                    <div class="recipe-box">
+                        <h2>Ingredients</h2>
+                        <p>
+                            <ul>
+                                <li>5 egg yolks</li>
+                                <li>1 cup sugar</li>
+                                <li>1 cup mascarpone</li>
+                                <li>2 cups double cream</li>
+                                <li>2 cups strong coffee</li>
+                                <li>1 cup kahlua</li>
+                                <li>24 u lady fingers</li>
+                                <li>cocoa powder for garnish</li>
+                            </ul>
+                        </p>
                     </div>
                     <div class="italian-text-box">
                         <h2>Instructions</h2>
                         <p>
                             <ol>
-            <li>Whisk egg yolks and sugar until pale and creamy.</li> 
-            <li>Add mascarpone to the egg yolk mixture and mix until smooth.</li> 
-                <li> Whip double cream until stiff peaks form.</li> 
-                    <li> Gently fold whipped cream into the mascarpone mixture.</li> 
-                        <li>Make a strong cup of coffee and let it cool. Add Kahlua and mix.</li> 
-                            <li>Dip ladyfingers into the coffee-Kahlua mixture.</li> 
-                                <li>Arrange a layer of dipped ladyfingers in a serving dish.</li> 
-                                    <li>Spread half of the mascarpone cream mixture over the ladyfingers.</li> 
-                                        <li>Repeat the layers with another layer of dipped ladyfingers and the remaining mascarpone cream mixture.</li> 
-                                            <li>Chill for 2 hours</li> 
-                                                <li>Before serving, sift cocoa powder over the top for garnish.</li> 
-                                                    <li> Slice and serve chilled.</li> 
-                                                        <li>Enjoy!</li> 
+                                <li>Whisk egg yolks and sugar until pale and creamy.</li>
+                                <li>Add mascarpone to the egg yolk mixture and mix until smooth.</li>
+                                <li> Whip double cream until stiff peaks form.</li>
+                                <li> Gently fold whipped cream into the mascarpone mixture.</li>
+                                <li>Make a strong cup of coffee and let it cool. Add Kahlua and mix.</li>
+                                <li>Dip ladyfingers into the coffee-Kahlua mixture.</li>
+                                <li>Arrange a layer of dipped ladyfingers in a serving dish.</li>
+                                <li>Spread half of the mascarpone cream mixture over the ladyfingers.</li>
+                                <li>Repeat the layers with another layer of dipped ladyfingers and the remaining
+                                    mascarpone cream mixture.</li>
+                                <li>Chill for 2 hours</li>
+                                <li>Before serving, sift cocoa powder over the top for garnish.</li>
+                                <li> Slice and serve chilled.</li>
+                                <li>Enjoy!</li>
 
                             </ol>
                         </p>
                         <nav id="spacing">
                             <a href="https://www.tastemade.co.uk/videos/classic-tiramisu/
                             ">Source</a>
-                            
+
                         </nav>
                     </div>
                 </div>
                 <!-- Fourth Recipe Box -->
-                <div class="recipe-box">
-                    <h2>Recipe 4</h2>
-                    <p>This is the content of Recipe box 4.</p>
+                <div class="italian-picture-box">
+                    <h2>Caprese Salad</h2>
+                    <a href="assets/recipe photos/italian4_720.jpg">
+                        <img src="assets/recipe photos/italian4_720.jpg" alt="Italian Caprese Salad">
+                    </a>
                 </div>
                 <!-- Fourth Image and Text Boxes -->
                 <div class="italian-double-section">
-                    <div class="italian-picture-box">
-                        <h2>Italian Picture Box 4</h2>
-                        <a href="#">
-                            <img src="x" alt="Italian Sample Image 4">
-                        </a>
+                    <div class="recipe-box">
+                        <h2>Ingredients</h2>
+                        <p>
+                            <ul>
+                                <li>1 bag Mixed salad</li>
+                                <li>2 handfuls Cherry tomatoes</li>
+                                <li>2 handfuls Mozzarella</li>
+                                <li>1 Avocado</li>
+                                <li>2tbsp Pesto (ideally home made, but the stuff from the fresh pasta aisle will do!)
+                                </li>
+                                <li>4tsbp Olive oil</li>
+                                <li>Juice of 1 lemon</li>
+                                <li>Salt + Pepper</li>
+                            </ul>
+                        </p>
                     </div>
                     <div class="italian-text-box">
-                        <h2>Italian Text Box 4</h2>
-                        <p>This is the content of Italian text box 4.</p>
+                        <h2>Instructions</h2>
+                        <p>
+                            <ol>
+                               <li>Chop your avocado and sprinkle on top of your salad.</li>
+                               <li>Follow with halved cherry tomatoes</li>
+                               <li>Toss your balls over the top.</li>
+                               <li>Pop your pesto, olive oil, lemon juice, a pinch of salt + pepper into a jar.</li>
+                               <li>Close, and shake!</li>
+                               <li>Drizzle all over the salad and….</li>
+                               <li>Enjoy!</li>
+
+                            </ol>
+                        </p>
                         <nav id="spacing">
-                            <b>Makes</b> 1 (12-inch) pizza.
-                            
+                             <a href="https://yournewfoods.com/italian-salad-recipes-10-tasty-salads-for-any-occasion/">Source</a>
+
                         </nav>
                     </div>
                 </div>
@@ -354,16 +395,16 @@
     </div>
     <div id="footer">
         <a href="#" class="social-media-link">
-            <img src="x" alt="Facebook Logo" class="social-media-logo">
-            Facebook
+            <img src="x" alt="Facebook" class="social-media-logo">
+            
         </a>
         <a href="#" class="social-media-link">
-            <img src="x" alt="Twitter Logo" class="social-media-logo">
-            Twitter
+            <img src="x" alt="Twitter" class="social-media-logo">
+            
         </a>
         <a href="#" class="social-media-link">
-            <img src="x" alt="Instagram Logo" class="social-media-logo">
-            Instagram
+            <img src="x" alt="Instagram" class="social-media-logo">
+            
         </a>
     </div>
 </body>
