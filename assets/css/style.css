@@ -1,0 +1,40 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;500&display=swap');
+
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*  project styles */
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
+}
+
+
+h1 {
+    font-family: 'Merienda', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #251515;
+}
+
+ h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: Toggle case;
+    letter-spacing: 2px;
+    color: #251515;
+}
+
+
+.hidden-heading {
+    display: none;
+}
