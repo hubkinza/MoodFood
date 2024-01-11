@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
             flex-direction: column;
             min-height: 100vh;
         }
+
         h1 {
             display: flex;
             flex-direction: column;
@@ -21,18 +23,29 @@
             align-items: center;
             margin: 0;
         }
+
         #page-links {
             letter-spacing: 2px;
             font-size: 20px;
             margin-bottom: 18px;
         }
+
         .active {
-    border-bottom: 1px solid #333;
-       }
+            border-bottom: 1px solid #333;
+        }
+
+        #spacing {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: auto;
+            margin-top: 10px;
+        }
+
         #wrapper {
             display: flex;
             flex: 1;
         }
+
         #side-panel {
             width: 200px;
             letter-spacing: 1px;
@@ -45,93 +58,132 @@
             border-color: #333;
             flex-direction: column;
             margin-bottom: 20px;
-            
+
         }
+
         #side-panel a {
             text-decoration: none;
             color: #333;
         }
+
         #main-content {
             flex: 1;
             padding: 20px;
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            background-color: #F4F4F4;
+            background-color: #FFF4F2;
         }
+
         .text-block {
             margin-bottom: 20px;
         }
+
         #footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px;
             width: 100%;
+            height: auto;
             position: fixed;
             bottom: 0;
         }
+
         .social-media-link {
             margin: 0 10px;
             color: #fff;
             text-decoration: none;
         }
+
         .social-media-logo {
             width: 20px;
             height: 20px;
             margin-right: 5px;
         }
+
         @media (max-width: 768px) {
             #side-panel {
-                width: 120px; /* Adjust the width as needed */
+                width: 120px;
+                /* Adjust the width as needed */
                 height: auto;
             }
+
             #main-content {
                 width: 100%;
             }
-            .italian-content {
+
+            .french-content {
                 flex-direction: column-reverse;
             }
-            .italian-double-section {
+
+            .french-double-section {
                 flex-direction: column;
             }
-            .italian-text-box,
-            .italian-picture-box,
+
+            .french-text-box,
+            .french-picture-box,
             .recipe-box {
                 margin-right: 0;
                 width: 100%;
             }
         }
-        /* Italian Page Specific Styles */
-        .italian-content {
+
+        /* french Page Specific Styles */
+        .french-content {
             display: flex;
             flex-direction: column;
         }
-        .italian-title,
-        .italian-text-box,
-        .italian-picture-box,
+
+        .french-title,
+        .french-text-box,
+        .french-picture-box,
         .recipe-box {
             margin-bottom: 20px;
         }
-        .italian-double-section {
+
+        .french-double-section {
             display: flex;
             flex-wrap: wrap;
+
         }
-        .italian-text-box,
-        .italian-picture-box,
+
+        .french-text-box,
+        .french-picture-box,
         .recipe-box {
             flex: 1;
         }
-        .italian-picture-box img {
+
+        .french-picture-box img {
             max-width: 100%;
+            width: fit-content;
             height: auto;
+
         }
-        
+
+        .french-picture-box {
+            text-align: center;
+        }
+
+        .french-picture-box h2 {
+            margin-bottom: 10px;
+        }
+
+        .recipe-box li {
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .french-text-box li {
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
     </style>
     <title>MoodFood</title>
     <!--Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <header>
         <h1>Mood Food</h1>
@@ -146,93 +198,131 @@
             <a href="indian.html" id="page-links">Indian</a>
         </div>
         <div id="main-content">
-            <div class="italian-content">
-                <div class="italian-title">
-                    <h2>Italian Foods</h2>
+            <div class="spanish-content">
+                <div class="spanish-title">
+                    <h2>French Foods</h2>
                 </div>
                 <!-- First Recipe Box -->
-                <div class="recipe-box">
-                    <h2>Garlic Butter Shrimp Pasta</h2>
-                    <p>
-                        <ul>
-                            <li>12 oz Fettuccine</li>
-                            <li>1 lb Shrimp</li>
-                            <li>4 clove Garlic</li>
-                            <li>½ cup Parmesan Cheese</li>
-                            <li>4 tbsp Butter</li>
-                            <li>¼ Juice of Lemon Juice from 1/4 of Lemon</li>
-                            <li>¼ Lemon Zest from 1/4 of Lemon</li>
-                            <li>2 tbsp Cooking Oil</li>
-                            <li>Sea Salt</li>
-                            <li>Black Pepper</li>
-                        </ul>
-                    </p>
+                <div class="french-picture-box">
+                    <h2>French Recipe 1</h2>
+                    <a href="x">
+                        <img src="x" alt="x">
+                    </a>
                 </div>
                 <!-- First Image and Text Boxes -->
-                <div class="italian-double-section">
-                    <div class="italian-picture-box">
-                        <h2>Italian Picture Box 1</h2>
-                        <a href="#">
-                            <img src="x" alt="Italian Sample Image 1">
-                        </a>
+                <div class="french-double-section">
+                    <div class="recipe-box">
+                        <h2>Ingredients</h2>
+                        <p>
+                            <ul>
+                                <li>x</li>
+                            </ul>
+                        </p>
                     </div>
-                    <div class="italian-text-box">
-                        <h2>Italian Text Box 1</h2>
-                        <p>This is the content of Italian text box 1.</p>
+                    <div class="french-text-box">
+                        <h2>Instructions</h2>
+                        <p>
+                            <ol>
+                                <li>x</li>
+                            </ol>
+                            <nav id="spacing">
+                                <b>Prep Time:</b> 15 minutes
+                                <b>Cook Time:</b> 45 minutes
+                                <b>Servings:</b> 5 people
+                            </nav>
+                            <a href="x">Source</a>
+                        </p>
                     </div>
                 </div>
                 <!-- Second Recipe Box -->
-                <div class="recipe-box">
-                    <h2>Recipe 2</h2>
-                    <p>This is the content of Recipe box 2.</p>
+                <div class="french-picture-box">
+                    <h2>French Recipe 2</h2>
+                    <a href="x">
+                        <img src="x" alt="x">
+                    </a>
                 </div>
                 <!-- Second Image and Text Boxes -->
-                <div class="italian-double-section">
-                    <div class="italian-picture-box">
-                        <h2>Italian Picture Box 2</h2>
-                        <a href="#">
-                            <img src="x" alt="Italian Sample Image 2">
-                        </a>
+                <div class="french-double-section">
+                    <div class="recipe-box">
+                        <h2>Ingredients</h2>
+                        <p>
+                            <ul>
+                                <li>x</li>
+                            </ul>
+                        </p>
                     </div>
-                    <div class="italian-text-box">
-                        <h2>Italian Text Box 2</h2>
-                        <p>This is the content of Italian text box 2.</p>
+                    <div class="french-text-box">
+                        <h2>Instructions</h2>
+                        <p>
+                            <ol>
+                                <li>x</li>
+                                <nav id="spacing">
+
+                                </nav>
+                            </ol>
+                            <a href="x">Source</a>
+                        </p>
                     </div>
                 </div>
                 <!-- Third Recipe Box -->
-                <div class="recipe-box">
-                    <h2>Recipe 3</h2>
-                    <p>This is the content of Recipe box 3.</p>
+                <div class="french-picture-box">
+                    <h2>French Recipe 3</h2>
+                    <a href="x">
+                        <img src="x" alt="x">
+                    </a>
                 </div>
                 <!-- Third Image and Text Boxes -->
-                <div class="italian-double-section">
-                    <div class="italian-picture-box">
-                        <h2>Italian Picture Box 3</h2>
-                        <a href="#">
-                            <img src="x" alt="Italian Sample Image 3">
-                        </a>
+                <div class="french-double-section">
+                    <div class="recipe-box">
+                        <h2>Ingredients</h2>
+                        <p>
+                            <ul>
+                                <li>x</li>
+                            </ul>
+                        </p>
                     </div>
-                    <div class="italian-text-box">
-                        <h2>Italian Text Box 3</h2>
-                        <p>This is the content of Italian text box 3.</p>
+                    <div class="french-text-box">
+                        <h2>Instructions</h2>
+                        <p>
+                            <ol>
+                                <li>x</li>
+                            </ol>
+                        </p>
+                        <nav id="spacing">
+                            <a href="x">Source</a>
+
+                        </nav>
                     </div>
                 </div>
                 <!-- Fourth Recipe Box -->
-                <div class="recipe-box">
-                    <h2>Recipe 4</h2>
-                    <p>This is the content of Recipe box 4.</p>
+                <div class="french-picture-box">
+                    <h2>French Recipe 4</h2>
+                    <a href="x">
+                        <img src="x" alt="x">
+                    </a>
                 </div>
                 <!-- Fourth Image and Text Boxes -->
-                <div class="italian-double-section">
-                    <div class="italian-picture-box">
-                        <h2>Italian Picture Box 4</h2>
-                        <a href="#">
-                            <img src="x" alt="Italian Sample Image 4">
-                        </a>
+                <div class="french-double-section">
+                    <div class="recipe-box">
+                        <h2>Ingredients</h2>
+                        <p>
+                            <ul>
+                                <li>x</li>
+                            </ul>
+                        </p>
                     </div>
-                    <div class="italian-text-box">
-                        <h2>Italian Text Box 4</h2>
-                        <p>This is the content of Italian text box 4.</p>
+                    <div class="french-text-box">
+                        <h2>Instructions</h2>
+                        <p>
+                            <ol>
+                                <li>x</li>
+
+                            </ol>
+                        </p>
+                        <nav id="spacing">
+                            <a href="x">Source</a>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -240,17 +330,18 @@
     </div>
     <div id="footer">
         <a href="#" class="social-media-link">
-            <img src="x" alt="Facebook Logo" class="social-media-logo">
-            Facebook
+            <img src="x" alt="Facebook" class="social-media-logo">
+
         </a>
         <a href="#" class="social-media-link">
-            <img src="x" alt="Twitter Logo" class="social-media-logo">
-            Twitter
+            <img src="x" alt="Twitter" class="social-media-logo">
+
         </a>
         <a href="#" class="social-media-link">
-            <img src="x" alt="Instagram Logo" class="social-media-logo">
-            Instagram
+            <img src="x" alt="Instagram" class="social-media-logo">
+
         </a>
     </div>
 </body>
+
 </html>
