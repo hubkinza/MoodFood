@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /*  project styles */
+    /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
@@ -37,4 +37,254 @@ h1 {
 
 .hidden-heading {
     display: none;
+}
+
+/* Header */
+header {
+    background-color: rgb(237, 235, 243);
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: rgb(237, 235, 243);
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Main content */
+main {
+    /* Enlarge main element to push footer down*/
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/Hero\ Image.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    /* Final rgba value sets the opacity so it is semi-transparent */
+    background-color: rgba(145, 138, 203, 0.7);
+    font-size: 130%;
+    position:sticky;
+    bottom: 10px;
+    width: fit-content;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
+}
+
+/* cousines section */
+#cousines {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#cousines h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#cousine-style > div,
+#cousine-other > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#recipe p {
+    padding: 0 20px;
+}
+
+#recipe hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
+/* Footer */
+.contact{
+    text-transform: capitalize;
+    text-align: center;
+    text-size-adjust: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+
+    
+}
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 290%;
+        line-height: 85px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 89px;
+    }
+
+    /* Hero */
+    #cover-text {
+        width: fit-content;
+        left: 100px;
+    }
+
+    /* cousines section */
+    #cousine-style,
+    #cousine-other {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #cousine-style > div,
+    #cousine-other > div {
+        width: 75%;
+    }
+
+    #cousine-other > div {
+        text-align: end;
+        align-self: flex-end;
+    }
+
+    
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {    
+    /* cousines section */
+    #recipe {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #recipe > div {
+        flex: 1;
+    }
+
+    #recipe-image {
+        order: 0
+    }
+
+    #cousine-other {
+        order: 1;
+    }
+
+    #cousine-other > div {
+        align-self: flex-start;
+    }
+
+    #cousine-style > div {
+        align-self: flex-end;
+    }
 }
