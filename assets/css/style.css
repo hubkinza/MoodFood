@@ -31,7 +31,7 @@ h1 {
 
  h2, h3 {
     font-family: 'Merienda', sans-serif;
-    text-transform: Toggle case;
+    text-transform:capitalize;
     letter-spacing: 1px;
     color: #251515;
 }
@@ -39,7 +39,7 @@ h1 {
 h4{
     font-family: 'Merienda',sans-serif;
     letter-spacing: 2px;
-    text-transform: Toggle case;
+    text-transform: capitalize;
     color:white;
 
 }
@@ -179,7 +179,7 @@ main {
 .contact{
     text-transform: capitalize;
     text-align: center;
-    text-size-adjust: relative;
+    font-size-adjust: inherit;
     font-family: 'Lato', sans-serif;
     font-size: 100%;
 
