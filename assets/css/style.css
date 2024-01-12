@@ -149,7 +149,7 @@ main {
 /* cousines section */
 #cousines {
     width: 90%;
-    margin: 50px auto;
+    margin: 20px auto;
 }
 
 #cousines h2 {
@@ -239,10 +239,11 @@ main {
         
     }
 
+
     /* Main content */
     main {
         /* space between main header and the image */
-        margin-top: 90px;
+        margin-top: 15px;
     }
 
     /* Hero */
